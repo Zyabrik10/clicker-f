@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clicker</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<script type="text/javascript" src="jQuery/jquery-3.0.0.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="button">CLICK</button>
+<div class="money"><span>0$</span></div>
+<div class="develops">
+	<h3>Develops</h3>
+	<div class="wrapper"> 
+		<button class="plus" data-plus="2" data-used="false" data-cost="10">+2 10$</button>
+		<button class="plus" data-plus="30" data-used="false" data-cost="100">+30 100$</button>
+		<button class="plus" data-plus="100" data-used="false" data-cost="1200">+100 1.2k$</button>
+		<button class="plus" data-plus="300" data-used="false" data-cost="9000">+300 9k$</button>
+		<button class="plus" data-plus="1000" data-used="false" data-cost="35000">+1000 35k$</button>
+		<button class="plus" data-plus="1700" data-used="false" data-cost="110000">+1700 110k$</button>
+		<button class="plus" data-plus="2400" data-used="false" data-cost="750000">+2.4k 750k$</button>
+		<button class="plus" data-plus="3200" data-used="false" data-cost="1000000">+3.2k 1m$</button>
+		<button class="plus" data-plus="4000" data-used="false" data-cost="1200000">+4k 1.2m$</button>
+		<button class="plus" data-plus="10000" data-used="false" data-cost="10000000">+10k 10m$</button>
+		<button class="plus" data-plus="30000" data-used="false" data-cost="70000000">+30k 70m$</button>
+		<button class="plus" data-plus="78000" data-used="false" data-cost="230000000">+78k 230m$</button>
+		<button class="plus" data-plus="128000" data-used="false" data-cost="900000000">+128k 900m$</button>
+		<button class="plus" data-plus="100000000" data-used="false" data-cost="1500000000">+100m 1.5b$</button>
+		<button class="plus" data-plus="570000000" data-used="false" data-cost="5500000000">+570m 5.5b$</button>   
+		<button class="plus" data-plus="126000000000" data-used="false" data-cost="18000000000">+126b 18b$</button>   
+		<button class="plus" data-plus="480000000000000" data-used="false" data-cost="30000000000">+480b 30b$</button>   
+		<button class="plus" data-plus="1000000000000000" data-used="false" data-cost="1000000000000">+1d 1c$</button>   
+	</div>
+</div>
+<div class='features'>
+	<h3>Customization</h3>
+	<div class="wrapper">
+		<input type="color" class="color">
+		<button class="feat_butt_color" data-used="false" data-cost="100000000" onclick="color()">100m$</button>
+		<div class="cr_img cr_img1"></div>
+		<button class="feat_butt" data-used="false" data-cost="500000000" data-src="linear-gradient(60deg,red,blue)">500m$</button>
+		<div class="cr_img cr_img2"></div>
+		<button class="feat_butt" data-used="false" data-cost="1000000000" data-src="linear-gradient(60deg,yellow,#00FF0DFF,green)">1b$</button>
+		<div class="cr_img cr_img3"></div>
+		<button class="feat_butt" data-used="false" data-cost="200000000000" data-src="linear-gradient(60deg,white,grey,black)">200b$</button>
+		<div class="cr_img cr_img4"></div>
+		<button class="feat_butt" data-used="false" data-cost="700000000000" data-src="linear-gradient(60deg,#00FFFFFF,#FF00DAFF)">700c$</button>
+
+		<div class="cr_img cr_img5"></div>
+		<button class="feat_butt_img" data-used="false" data-cost="1000000000000" data-src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/51dab9fd-1690-4799-96e6-68089262a0ed/d9k8ne5-b7187b3f-2bec-4533-9e69-9233eb324107.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTFkYWI5ZmQtMTY5MC00Nzk5LTk2ZTYtNjgwODkyNjJhMGVkXC9kOWs4bmU1LWI3MTg3YjNmLTJiZWMtNDUzMy05ZTY5LTkyMzNlYjMyNDEwNy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.bbVznMhOtoVPxaWW9aLYKq5MmExGcQ_23SqDZX_RH-M">1d$</button>
+		<div class="cr_img cr_img6"></div>
+		<button class="feat_butt_img" data-used="false" data-cost="10000000000000" data-src="https://thumbs.dreamstime.com/z/emoticons-seamless-pattern-yellow-emoji-vector-background-smiles-face-texture-template-modern-smileys-textiles-interior-design-131993988.jpg">10d$</button>
+		<div class="cr_img cr_img7"></div>
+		<button class="feat_butt_img" data-used="false" data-cost="120000000000000" data-src="https://pristor.ru/wp-content/uploads/2020/06/%D0%90%D0%BD%D0%B8%D0%BC%D0%B5-%D0%B0%D1%80%D1%82%D1%8B-%D1%82%D1%8F%D0%BD-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%83-3.jpg">120d$</button>
+		<div class="cr_img cr_img8"></div>
+		<button class="feat_butt_img" data-used="false" data-cost="1000000000000000" data-src="https://i.pinimg.com/originals/34/d2/a5/34d2a50d6837db706edf0df97754ffca.jpg">1e$</button>
+	</div>
+</div>
+	<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
